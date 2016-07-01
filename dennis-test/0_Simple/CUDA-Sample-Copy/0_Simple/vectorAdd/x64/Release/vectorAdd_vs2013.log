@@ -1,0 +1,21 @@
+﻿Build started 1/7/2016 2:40:32 AM.
+     1>Project "D:\CUDA-Sample\0_Simple\vectorAdd\vectorAdd_vs2013.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         D:\vd2013ce\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN32 /D_MBCS /D_MBCS /I./ /I../../common/inc /I./ /ID:\CUDA-7.5\/include /I../../common/inc /ID:\CUDA-7.5\bin /ID:\CUDA-7.5\include /I. /FIcuda_runtime.h /c D:\CUDA-Sample\0_Simple\vectorAdd\vectorAdd.cu 
+       CudaBuild:
+         Compiling CUDA source file vectorAdd.cu...
+         cmd.exe /C "C:\Users\dennisng\AppData\Local\Temp\tmpd13d6a3f8f0049d88c010549711535f3.cmd"
+         "D:\CUDA-7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" -gencode=arch=compute_37,code=\"sm_37,compute_37\" -gencode=arch=compute_50,code=\"sm_50,compute_50\" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env --cl-version 2013 -ccbin "D:\vd2013ce\VC\bin\x86_amd64"  -I./ -I../../common/inc -I./ -I"D:\CUDA-7.5\/include" -I../../common/inc -I"D:\CUDA-7.5\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler "/wd 4819"     -DWIN32 -DWIN32 -D_MBCS -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MT " -o x64/Release/vectorAdd.cu.obj "D:\CUDA-Sample\0_Simple\vectorAdd\vectorAdd.cu"
+         
+         D:\CUDA-Sample\0_Simple\vectorAdd>"D:\CUDA-7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" -gencode=arch=compute_37,code=\"sm_37,compute_37\" -gencode=arch=compute_50,code=\"sm_50,compute_50\" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env --cl-version 2013 -ccbin "D:\vd2013ce\VC\bin\x86_amd64"  -I./ -I../../common/inc -I./ -I"D:\CUDA-7.5\/include" -I../../common/inc -I"D:\CUDA-7.5\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler "/wd 4819"     -DWIN32 -DWIN32 -D_MBCS -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MT " -o x64/Release/vectorAdd.cu.obj "D:\CUDA-Sample\0_Simple\vectorAdd\vectorAdd.cu" 
+         vectorAdd.cu
+       Link:
+         D:\vd2013ce\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../../bin/win64/Release//vectorAdd.exe" /NOLOGO /LIBPATH:"D:\CUDA-7.5\lib\x64" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"../../bin/win64/Release/vectorAdd.pdb" /SUBSYSTEM:CONSOLE /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../../bin/win64/Release/vectorAdd.lib" /MACHINE:X64 x64/Release/vectorAdd.cu.obj
+            Creating library ../../bin/win64/Release/vectorAdd.lib and object ../../bin/win64/Release/vectorAdd.exp
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         vectorAdd_vs2013.vcxproj -> D:\CUDA-Sample\0_Simple\vectorAdd\../../bin/win64/Release/vectorAdd.exe
+     1>Done Building Project "D:\CUDA-Sample\0_Simple\vectorAdd\vectorAdd_vs2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.50

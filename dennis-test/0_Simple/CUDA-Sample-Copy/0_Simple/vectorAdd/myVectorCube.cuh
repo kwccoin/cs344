@@ -1,0 +1,6 @@
+#ifndef MYVECTORCUBE_CUH_INCLUDED
+#define MYVECTORCUBE_CUH_INCLUDED
+
+extern int mainCube();
+
+#endif /* MYVECTORCUBE_CUH_INCLUDED */

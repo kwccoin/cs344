@@ -1,0 +1,7 @@
+
+#ifndef MYVECTORSQUARE_CUH_INCLUDED
+#define MYVECTORSQUARE_CUH_INCLUDED
+
+extern int mainSquare();
+
+#endif /* MYVECTORSQUARE_CUH_INCLUDED */
